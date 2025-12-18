@@ -70,7 +70,7 @@ for n in TAMANHOS_AMOSTRA:
 
     for r in range(R_REPETICOES):
         # A. Sorteio sem reposição [cite: 59]
-        amostra = np.random.choice(populacao, size=n, replace=False)
+        amostra = np.random.choice(populacao, size=n, replace=True)
         
         # B. Estatísticas da amostra [cite: 60]
         x_barra = np.mean(amostra)
